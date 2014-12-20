@@ -10,7 +10,12 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.serializer.KryoSerializer;
 import org.elasticsearch.hadoop.mr.EsInputFormat;
 
-
+/**
+ * Elasticsearch connection for Zeppelin.
+ *
+ * @author worwornf
+ *
+ */
 public class ElasticsearchDriver {
   public JavaPairRDD<Text, MapWritable> init() {
     SparkConf sparkConf = new SparkConf()
